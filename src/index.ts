@@ -14,7 +14,7 @@ app.use(compression());
 
 app.use(express.json());
 
-app.use('/api', routes('v1'));
+app.use('/', routes('v1'));
 
 // For Handel App Exceptions
 app.use((err: AppException, req: Request, res: Response, next: NextFunction) => {
